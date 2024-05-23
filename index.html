@@ -150,21 +150,24 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
+
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/dataset-card.png" />
+                        <img src="images/gs.png">
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Finding Similar Movies based on Plot Summaries</h3>
-                        <h4><i>NLTK , Scikit-learn, Scipy, Matplotlib</i></h4>
+                        <h3>Gesture Classification with Input Mapping</h3>
+                        <h4><i>Pandas, Numpy, Tensorflow, Gymnasium, Box2D, Matplotlib, Plotly</i></h4>
                         <p>
-                            Preprocessed text utilizing tokenization and stemming and performed TFIDF vectorization to extract features 
+                            Evaluated the performance of deep learning models, MobileNetV2 and EfficientNetV2, as base models for classifying gestures using 10,000 samples from the HaGRID dataset. Dense layers were added on top of the pre-trained models, and the images were normalized and scaled for training. 
                         </p>
                         <p>
-                            Applied K-Means clustering to analyze dataset of movies and their plot summaries and measured plot similarity and visualized hierarchical clustering using dendrogram
+                            MobileNetV2 achieved an accuracy of 92%, while EfficientNetV2 reached 89%. Selecting MobileNetV2, further tuning was performed by incorporating image augmentation and additional layers with Ridge regularization, increasing the accuracy to 94%. 
                         </p>
-                        <a href="#">View Project</a>
+                        <p>
+                            The classification outputs were integrated into the control systems of a 2D car racing game and a lunar lander simulation using the Box2D library from the Gymnasium environment, capturing real-time results from a live video feed to drive the games. 
+                        </p>
+                        <a href="https://tinyurl.com/3bsnve88" target="_blank">Results</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/prasasthg/EECE5642-Data-Visualization---Projects/tree/main/Gesture%20Classification%20with%20Input%20Mapping" target="_blank">Source</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -172,78 +175,138 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/ecg.jpg" />
+                        <img src="images/dm.png">
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>ECG Classification</h3>
-                        <h4><i>Pandas, Numpy, Tensorflow, Keras</i></h4>
+                        <h3>Pharmaceutical Sales Database Management and Mining</h3>
+                        <h4><i>RStudio, RSQLite, RMySQL, XPath, AWS RDS</i></h4>
                         <p>
-                            Performed multiclass classification by pre-processing and analyzing dataset of 87,554 ECG diagrams with 187 features. 
+                            Designed and implemented a normalized relational schema in SQLite based on XML data, ensuring data integrity and efficient storage. Developed robust algorithms to extract, transform, and load XML data into the database, facilitating seamless data integration and retrieval.
                         </p>
                         <p>
-                            Constructed a Convolutional Neural Network model with Conv1D, max pooling, dropout, and dense layers for five-class classification achieving 98% accuracy.
-                        </p>   
-                        <a href="#">View Project</a>
+                            Additionally, created and populated a MySQL data warehouse in AWS RDS utilizing a star schema, optimizing it for analytical queries and reporting. Conducted comprehensive data exploration and mining within the data warehouse, leveraging advanced querying techniques to uncover valuable insights.
+                        </p>
+                        <p>
+                            Generated an insightful report in R Markdown, employing various visualization techniques to effectively communicate the findings and support data-driven decision-making.
+                        </p>
+                        <a href="pharma.pdf" target="_blank">Results</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/prasasthg/CS5200-DBMS---Projects/tree/main/Pharmaceutical%20Sales%20Database%20Management%20and%20Mining" target="_blank">Source</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/bc.jpg" />
+                        <img src="images/dataset-card.png">
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Breast Cancer Detection</h3>
-                        <h4><i>Pandas, Numpy, Scikit-learn, Matplotlib</i></h4>
+                        <h3>Finding Similar Movies based on Plot Summaries</h3>
+                        <h4><i>NLTK , Scikit-learn, Scipy, Matplotlib</i></h4>
                         <p>
-                            Analyzed a dataset of 569 breast cancer patient records with 30 features, achieving binary classification for Benign (B) and Malignant (M) tumors 
+                            Preprocessed text data by utilizing tokenization to break down the text into individual tokens and stemming to reduce words to their root forms. This was followed by performing TF-IDF vectorization to extract and quantify relevant features from the text data.
                         </p>
                         <p>
-                            Compared model performance among multiple algorithms to determine most effective solution, thereby acquiring an accuracy of 95.6% using Random Forest and 90.4% using Decision Trees
+                            Applied K-Means clustering to analyze a dataset of movies and their plot summaries, effectively measuring plot similarity by grouping movies into clusters based on the extracted features.
                         </p>
-                        <a href="#">View Project</a>
+                        <p>
+                            Furthermore, visualized the hierarchical clustering using a dendrogram, providing a clear and detailed representation of the relationships and groupings among the movies, illustratating the degree of similarity between different movie plots.
+                        </p>
+                        <a href="dendrogram.html" target="_blank">Results</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/prasasthg/Personal-Projects/tree/main/Find%20Movie%20Similarity%20from%20Plot%20Summaries" target="_blank">Source</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/bs.jpg" />
+                        <img src="images/bs.jpg">
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Analysis of Bird Strikes on Aircrafts</h3>
                         <h4><i>RStudio, AWS RDS, RMySQL</i></h4>
                         <p>
-                            Configured AWS RDS for cloud-based MySQL server setup and implemented relational schema for efficient data organization                        </p>
+                            Configured AWS RDS for a cloud-based MySQL server setup, ensuring a scalable and secure environment for data storage and management.
                         <p>
-                            Imported and processed dataset of 25,558 records with 15 variables into MySQL database and executed SQL queries to analyze bird strike incidents for aviation risk assessment
+                            Implemented a relational schema to organize data efficiently, optimizing performance and accessibility.
                         </p>
-                        <a href="#">View Project</a>
+                        <p>
+                            Imported and processed a dataset of 25,558 records with 15 variables into the MySQL database, ensuring data integrity and accuracy.
+                        </p>
+                        <p>
+                            Executed a series of SQL queries to analyze bird strike incidents, providing valuable insights for aviation risk assessment.
+                        </p>
+                        <a href="strikes.pdf" target="_blank">Results</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/prasasthg/CS5200-DBMS---Projects/tree/main/Analysis%20of%20Bird%20Strikes%20on%20Aircrafts" target="_blank">Source</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/sv.jpg" />
+                        <img src="images/ecg.jpg">
                     </div>
-                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>ECG Classification</h3>
+                        <h4><i>Pandas, Numpy, Tensorflow, Keras</i></h4>
+                        <p>
+                            Performed multi-class classification by meticulously pre-processing and analyzing a dataset comprising 87,554 ECG diagrams, each with 187 features.
+                        </p>
+                        <p>
+                            Constructed a robust Convolutional Neural Network (CNN) model tailored for five-class classification tasks. The architecture involved Conv1D layers to capture spatial dependencies, max pooling to downsample feature maps, dropout layers for regularization, and dense layers for final classification. 
+                        </p>
+                        <p>
+                            Achieved an impressive accuracy of 98% on the test set, showcasing the model's efficacy in accurately classifying ECG diagrams and potentially aiding in medical diagnosis and monitoring.
+                        </p>
+                        <a href="ecg.pdf" target="_blank">Results</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/prasasthg/Personal-Projects/tree/main/ECG%20Classification%20Using%20CNN" target="_blank">Source</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/sv.jpg">
+                    </div>
                     <div class="project-info">
                         <h3>Stereo Vision</h3>
                         <h4><i>Scikit-image, Numpy, Scipy, Maplotpib</i></h4>
                         <p>
-                            Created a robust stereo correspondence algorithm using Harris Corner Detection, NCC matching, and RANSAC outlier removal algorithms in Python                        </p>
-                        <p>
-                            Demostrated the algorithm's accuracy in generating and estimating disparity maps, providing valuable depth insights for future applications
+                            Developed a robust stereo correspondence algorithm in Python, integrating techniques such as Harris Corner Detection, Normalized Cross-Correlation (NCC) matching, and RANSAC outlier removal. This algorithm accurately identifies corresponding points in stereo image pairs, facilitating the generation and estimation of high-quality disparity maps.
                         </p>
-                        <a href="#">View Project</a>
+                        <p>
+                            By leveraging the combined power of these algorithms, the stereo correspondence algorithm offers precise depth estimation, providing valuable insights into spatial relationships within images. 
+                        </p>
+                        <p>
+                            The demonstrated accuracy of the algorithm ensures its utility across various applications, including 3D reconstruction, depth sensing, and augmented reality.
+                        </p>
+                        <a href="SV.pdf" target="_blank">Results</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/prasasthg/EECE5639-Computer-Vision---Projects/tree/main/Stereo%20Vision" target="_blank">Source</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/bc.jpg">
+                    </div>
+                    <div class="project-info">
+                        <h3>Breast Cancer Detection</h3>
+                        <h4><i>Pandas, Numpy, Scikit-learn, Matplotlib</i></h4>
+                        <p>
+                            Analyzed a comprehensive dataset comprising 569 breast cancer patient records, each characterized by 30 features to achieve binary classification for distinguishing between Benign (B) and Malignant (M) tumors.
+                        </p>
+                        <p>
+                            Conducted an in-depth comparison of model performance among multiple machine learning algorithms to determine the most effective solution. After thorough evaluation, identified Random Forest as the top-performing algorithm, achieving an impressive accuracy of 95.6%. Additionally, Decision Trees exhibited promising results, attaining an accuracy of 90.4%.
+                        </p>
+                        <p>
+                            These findings underscored the efficacy of ensemble learning techniques in accurately classifying breast cancer tumors based on diverse features.
+                        </p>
+                        <a href="BC.pdf" target="_blank">Results</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/prasasthg/EECE5644-Intro-To-ML---Projects/tree/main/Breast%20Cancer%20Detection" target="_blank">Source</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+            <!-- End .project -->    
+
             </div>
         </div>
     </div>
